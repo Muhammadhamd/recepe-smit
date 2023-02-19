@@ -20,7 +20,8 @@
 
 
     .main-container{
-        width: 1366px;
+        max-width: 1366px;
+        width: 100%;
         display: flex;
         justify-content: center;
         background: #F2F2F2;
@@ -59,28 +60,16 @@ border-radius: 35px;
     align-items: center;
     font-family: "Inter";
     }
-    .container .navbar a{
-        background-color: orange;
-    width: 90px;
-    height: 35px;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    font-size: 12px;
-    font-family: "Inter";
-    }
 
     .content-mc{
         display:flex ;
         justify-content: space-between;
-        margin: 30px 0 0 0;
+        flex-wrap: wrap-reverse;
     }
 
     .container .content-mc .image-div{
        width: 40%;
+       min-width: 232.39px;
     }
 
     .container .content-mc .image-div img{
@@ -88,7 +77,8 @@ border-radius: 35px;
     }
     .container .content-mc .content-div {
         width: 50%;
-        margin: 60px 0 0 47px;
+        margin: 100px 0 0 47px;
+        min-width: 290.5px;
     }
     .container .content-mc .content-div h1{
         width: 381px;
@@ -172,20 +162,65 @@ color: #000000;
     width: 48%;
     }
 
-hr{
-    width: 80%;
-    height: 4px;
-    background-color: orange;
+
+    
+
+
+
+
+    @media screen and (max-width:807px) {
+    
+        .container .content-mc .content-div {
+        width: 50%;
+        margin: 100px 0 0 37px;
+    }
+    }
+
+    @media screen and (max-width:737px) {
+     .container{
+        padding: 15px;
+        width: 95%;
+     }
+        .container .content-mc .content-div {
+        width: 50%;
+        margin: 80px 0 0 18px;
+    }
+    }
+
+
+    @media screen and (max-width:737px) {
+        .container .content-mc .content-div h1 {
+    width: 90%;
+    font-size: 41px;
 }
+
+.container .content-mc .content-div .p-name {
+
+    font-size: 22px;
+
+}
+
+.container .content-mc .content-div h1 b {
+
+    font-size: 43px;
+}
+    }
+
+
+    @media screen and (max-width:641px) {
+        .content-mc{
+        justify-content:center;
+    }
+    }
+
 </style>
 <body>
     <div class="main-container">
         <div class="container">
             <nav class="navbar">
                 <h1>MH</h1>
-                <a href="">Whatsapp</a>
+              
             </nav>
-            <hr>
          <div class="content-mc">
             <div class="content-div">
                 <h1><b>Spaghetti</b> Easy Recipe</h1>
@@ -224,5 +259,6 @@ hr{
          </div>
         </div>
     </div>
+   
 </body>
 </html>
