@@ -1,100 +1,316 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+
 }
 body{
-    background-color: #151515;
-background-image:linear-gradient(#2d2f3a, #151515 5%);
-background-repeat: repeat-x;
-background-position: center 0, 0 0, 0 0px;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.navbar{
     display: flex;
-justify-content: center;
-margin: 30px 0;
-font-size: 20px;
+    justify-content: center;
 }
-.navlist{
-    display: flex;
-gap: 51px
-}
-.navlist li{
-    list-style: none;
-}
-.navlist li a{
-    text-decoration: none;
-    font-family: "Ubuntu Condensed";
-    color: white;
-}
-
-.container{
+.main-container{
+    max-width: 1366px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #F2F2F2;
+}
+.container{
+    background: #FFFFFF;
+border-radius: 35px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 50px 0;
 }
 
-.m-heading{
-    color: #ccc;
-    font-family: "Ubuntu Condensed";
-    border-bottom: 4px solid crimson;
-    font-size: 50px;
-width: 197px;
-text-align: center;
-padding: 0 0 11px 0;
-}
-.recipe-blog{
-    width: 600px;
-min-height: 200px;
-background-color: #242526;
-margin: 20px 0;
-box-shadow: 0px 0px 5px  rgb(0 0 0 / 71%);
-border-radius: 12px;
-font-family: "Ubuntu Condensed";
-}
-
-.head{
-width: 100%;
-height: 50px;
-display: flex;
-align-items: center;
-margin: 10px 0 5px 10px;
-font-family: "Ubuntu Condensed";
-
-}
-.head h5{
-color: white;
-}
-.img-div{
+.container .navbar{
     width: 100%;
+    display: flex;
+justify-content: space-between;
+padding: 0 15px 17px 15px;
+align-items: center;
+/* border-bottom: 4px solid orange; */
+margin: 10px;
+align-items: end;
+}
+
+.container .navbar h1{
+    background-color: orange;
+color: white;
+border-radius: 50%;
+width: 60px;
+height: 60px;
 display: flex;
 justify-content: center;
-background-color: black;
-min-height: 250px;
+align-items: center;
+font-family: "Inter";
+}
+
+.content-mc{
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.container .content-mc .image-div{
+   width: 40%;
+   min-width: 232.39px;
+}
+
+.container .content-mc .image-div img{
+    width: 100%;
+}
+.container .content-mc .content-div {
+    width: 50%;
+    margin: 100px 0 0 47px;
+    min-width: 290.5px;
+}
+.container .content-mc .content-div h1{
+    width: 381px;
+border-left: 4px solid orange;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 62px;
+color: #000000;
+padding: 0 0 0 10px;
+
+}
+
+.container .content-mc .content-div h1 b{
+    color: darkorange;
+font-size: 59px;
+font-weight: 900;
+border-left: 3px solid crimson;
+padding: 0 0 0 8px;
+}
+
+.container .content-mc .content-div .p-name{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 61px;
+border: none;
+color: #000000;
+}
+
+
+.container .content-mc .content-div .headline{
+    color: #8E8E8E;
+margin: 17px 0 0px 28px;
+width: 80%;
+}
+
+
+
+
+
+
+.container .section1 , .section2 , .section3 , .section4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 31px 0;
+}
+
+.container .section1 h1 , .section2 h1 , .section3 h1 , .section4 h1{
+    color: darkorange;
+margin: 30px 0 40px 0px;
+border-bottom: 3px solid crimson;
+width: 200px;
+text-align: center;
+padding: 0 0 5px 0;
+font-size: 36px;
+font-family: "Inter";
+}
+.container .section1 .list-div{
+    width: 300px;
+}
+.container .section1 ul li{
+    margin: 15px 0 0 0px;
+    font-family:SourceSansPro,Helvetica,sans-serif;
+font-size: 1.125rem;
+line-height: 1.75rem;
+text-underline-offset: 0.25rem;
+}
+
+
+.section2 p , .section3 p , .section2 ol{
+    font-family: Helvetica,sans-serif;
+font-size: 1.1rem;
+line-height: 1.75rem;
+text-underline-offset: 0.25rem;
+width: 48%;
+text-align: center;
+}
+
+.section4 .content-c{
+    display: flex;
+justify-content: center;
+}
+ .section4 .content-c .img-container{
+    height: 231px;
+ }
+
+.section4 .content-c a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+}
+.section4 .content-c a .blog{
+    width: 350px;
+background-color: darkorange;
+border-radius: 16px;
+padding: 20px;
+display: flex;
+flex-direction: column;
 align-items: center;
 }
-.img-div img{
-    max-width: 100%;
+
+.section4 .content-c a .blog p{
+    color: #000000be;
+    text-align: center;
+    margin: 10px 0 10px 0;
 }
 
-.footer{
-color: #dee1e6;
-padding: 20px 15px;
-font-family: "Ubuntu Condensed";
+.section5{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 19px 0 0 14px;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+.section5 .copy-right-div{
+
+}
+.section5 .copy-right-div p{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000ad;
+}
+.section5 .platform-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section5 a{
+    width: 50px;
+    text-decoration: none;
+    margin: 10px;
+}
+.section5 a i{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:807px) {
+
+    .container .content-mc .content-div {
+    width: 50%;
+    margin: 100px 0 0 37px;
+}
+}
+
+@media screen and (max-width:737px) {
+ .container{
+    padding: 15px;
+    width: 95%;
+ }
+    .container .content-mc .content-div {
+    width: 50%;
+    margin: 80px 0 0 18px;
+}
+}
+
+
+@media screen and (max-width:737px) {
+    .container .content-mc .content-div h1 {
+width: 90%;
+font-size: 41px;
+}
+
+.container .content-mc .content-div .p-name {
+
+font-size: 22px;
 
 }
 
-.footer h2{
-padding: 0 0 10px 0 ;
-font-family:"Ubuntu" ;
+.container .content-mc .content-div h1 b {
+
+font-size: 43px;
+}
 }
 
-@media screen and (max-width:510px) {
-.sec .blog{
 
-    width: 90%;
+@media screen and (max-width:641px) {
+    .content-mc{
+    justify-content:center;
+}
+}
+@media screen and (max-width:500px) {
+
+    .section2 p , .section3 p , .section2 ol{
+       
+        font-size: 1.1rem;
+        width: 70%;
+    
+        }
+}
+@media screen and (max-width:400px) {
+    .container .section1 .list-div {
+        width: 90%;
+    }
+    .container .section1 .list-div li {
+            font-size: 1rem;
+
+    }
+
+    .section2 p , .section3 p , .section2 ol{
+       
+        font-size: 1rem;
+        width: 79%;
+    
+        }
+
+    .content-c{
+    justify-content:center;
+}
+.section4 .content-c a .blog{
+    width: 95%;
+}
+.section5 .copy-right-div p {
+
+    font-size: 14px;
+
+}
+}
+
+@media screen and (max-width:300px) {
+
+.section4 .content-c a .blog img{
+    width: 100%;
 }
 }
